@@ -27,6 +27,16 @@ members = [
 ]
 exclude = ["test_util/std/hash/_wasm"]
 
+[patch.crates-io]
+swc_atoms = { path = "../swc/crates/swc_atoms" }
+swc_bundler = { path = "../swc/crates/swc_bundler" }
+swc_common = { path = "../swc/crates/swc_common" }
+swc_ecmascript = { path = "../swc/crates/swc_ecmascript" }
+dprint-swc-ecma-ast-view = { path = "../dprint-swc-ecma-ast-view/rs-lib" }
+deno_lint = { path = "../oden_lint" }
+deno_doc = { path = "../oden_doc" }
+deno_ast = { path = "../oden_ast" }
+
 # NB: the `bench` and `release` profiles must remain EXACTLY the same.
 [profile.release]
 codegen-units = 1

@@ -1,17 +1,17 @@
 # Copyright 2018-2022 the Deno authors. All rights reserved. MIT license.
 
 [package]
-name = "deno"
-version = "1.21.0"
+name = "oden"
+version = "0.0.0"
 authors = ["the Deno authors"]
-default-run = "deno"
+default-run = "oden"
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/denoland/deno"
-description = "Provides the deno executable"
+repository = "https://github.com/dalscript/oden"
+description = "Provides the oden executable"
 
 [[bin]]
-name = "deno"
+name = "oden"
 path = "main.rs"
 
 [[bench]]
@@ -118,8 +118,8 @@ trust-dns-server = "=0.20.3"
 nix = "=0.23.0"
 
 [package.metadata.winres]
-# This section defines the metadata that appears in the deno.exe PE header.
-OriginalFilename = "deno.exe"
+# This section defines the metadata that appears in the oden.exe PE header.
+OriginalFilename = "oden.exe"
 LegalCopyright = "© Deno contributors & Deno Land Inc. MIT licensed."
-ProductName = "Deno"
-FileDescription = "Deno: A secure runtime for JavaScript and TypeScript"
+ProductName = "Oden"
+FileDescription = "Oden: A secure runtime for JavaScript and TypeScript with pipes"
